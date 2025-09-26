@@ -43,8 +43,9 @@ public:
 
 class BenCode_List : public BenCode
 {
-public:
+private:
     std::vector<std::shared_ptr<BenCode>> list_data_;
+public:
 
     uint64_t getSize() const noexcept
     {

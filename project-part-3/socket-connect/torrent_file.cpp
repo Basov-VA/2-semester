@@ -6,25 +6,24 @@
 #include <variant>
 #include <sstream>
 
-TorrentFile LoadTorrentFile(const std::string& filename)
-{
-    std::ifstream z(filename, std::ios::binary);
-    std::stringstream b;
-    b << z.rdbuf();
-    std::string data = b.str();
-    z.close();
+TorrentFile LoadTorrentFile(const std::string& filename) {
+    std::ifstream file(filename, std::ios::binary);
+    std::stringstream buf;
+    buf << file.rdbuf();
+    std::string data = buf.str();
+    file.close();
 
-    TorrentFile Ans;
-    uint64_t position = 0;
+    TorrentFile TrFile;
+    size_t position = 0;
 
-    std::shared_ptr<BenCode_Dictionary> dict = std::dynamic_pointer_cast<BenCode_Dictionary>(Bencode::parse_fucking_BenCode(data.c_str(),data.size(),position));
-    Ans.announce = std::dynamic_pointer_cast<BenCode_String>(dict->get("announce"))->get_s();
-    Ans.comment = std::dynamic_pointer_cast<BenCode_String>(dict->get("comment"))->get_s();
-    Ans.pieceLength = std::dynamic_pointer_cast<BenCode_Integer>(std::dynamic_pointer_cast<BenCode_Dictionary>(dict->get("info"))->get("piece length"))->get_i();
-    Ans.length = std::dynamic_pointer_cast<BenCode_Integer>(std::dynamic_pointer_cast<BenCode_Dictionary>(dict->get("info"))->get("length"))->get_i();
-    Ans.pieceHashes = Bencode::GetPieceHashes(dict);
-    Ans.infoHash = Bencode::GetInfoHash(*dict);
-    return Ans;
+    auto root_dict = Bencode::BenCode_Dictionary::parse(data.c_str(),data.size(),position);
+    TrFile.announce = std::dynamic_pointer_cast<Bencode::BenCode_String>(root_dict->getValue("announce"))->getData();
+    TrFile.comment = std::dynamic_pointer_cast<Bencode::BenCode_String>(root_dict->getValue("comment"))->getData();
+    TrFile.pieceLength = std::dynamic_pointer_cast<Bencode::BenCode_Integer>(std::dynamic_pointer_cast<Bencode::BenCode_Dictionary>(root_dict->getValue("info"))->getValue("piece length"))->getData();
+    TrFile.length = std::dynamic_pointer_cast<Bencode::BenCode_Integer>(std::dynamic_pointer_cast<Bencode::BenCode_Dictionary>(root_dict->getValue("info"))->getValue("length"))->getData();
+    TrFile.pieceHashes = GetPieceHashes(root_dict);
+    TrFile.infoHash = GetInfoHash(*root_dict);
+    return TrFile;
 }
 
 

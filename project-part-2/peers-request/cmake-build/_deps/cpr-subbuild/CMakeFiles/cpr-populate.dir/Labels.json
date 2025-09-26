@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/CMakeFiles/cpr-populate"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/CMakeFiles/cpr-populate.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test.rule"
+		},
+		{
+			"file" : "/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpr-populate"
+		],
+		"name" : "cpr-populate"
+	}
+}

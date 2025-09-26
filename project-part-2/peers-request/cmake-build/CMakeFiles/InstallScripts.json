@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/cmake_install.cmake",
+		"/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-build/cmake_install.cmake",
+		"/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-build/cpr/cmake_install.cmake",
+		"/Users/yolkee/\u0441\u0442\u0430\u0436\u043a\u04302/Yolkee/project-part-2/peers-request/cmake-build/_deps/cpr-build/include/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

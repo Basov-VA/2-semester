@@ -29,8 +29,6 @@ public:
      */
     const std::vector<Peer>& GetPeers() const;
 
-    std::string get_str_peers_dlya_daunov(std::string ben_code_string);
-
 private:
     std::string url_;
     std::vector<Peer> peers_;
